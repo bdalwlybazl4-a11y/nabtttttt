@@ -1,0 +1,120 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.untitled2"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- الإنترنت -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!-- الميكروفون -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- حفظ التسجيل (اختياري) -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- الكاميرا -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- تشغيل خدمة في الخلفية -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <!-- نافذة فوق التطبيقات -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- تعديل الصوت -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- قراءة حالة الهاتف -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:label="نبض"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+
+        <!-- Google Maps API Key -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                android:resource="@style/NormalTheme"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- خدمة المكالمات -->
+        <service
+            android:name="com.zego.uikit.prebuilt.call.ZegoCallForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="microphone|camera|connectedDevice" />
+
+        <!-- استقبال المكالمات -->
+        <receiver
+            android:name="com.hiennv.flutter_callkit_incoming.CallkitIncomingBroadcastReceiver"
+            android:exported="true"
+            tools:replace="android:exported">
+
+            <intent-filter>
+                <action android:name="com.example.untitled2.com.hiennv.flutter_callkit_incoming.ACTION_CALL_ACCEPT"/>
+                <action android:name="com.example.untitled2.com.hiennv.flutter_callkit_incoming.ACTION_CALL_DECLINE"/>
+                <action android:name="com.example.untitled2.com.hiennv.flutter_callkit_incoming.ACTION_CALL_ENDED"/>
+                <action android:name="com.example.untitled2.com.hiennv.flutter_callkit_incoming.ACTION_CALL_INCOMING"/>
+                <action android:name="com.example.untitled2.com.hiennv.flutter_callkit_incoming.ACTION_CALL_TIMEOUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- إشعارات -->
+        <service
+            android:name="com.hiennv.flutter_callkit_incoming.CallkitNotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="phoneCall"
+            tools:replace="android:exported"/>
+
+        <!-- خدمة الاتصال -->
+        <service
+            android:name="com.hiennv.flutter_callkit_incoming.CallkitConnectionService"
+            android:exported="true"
+            android:permission="com.example.untitled2.PERMISSION_CALL"
+            tools:replace="android:exported,android:permission"/>
+
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+    </application>
+
+</manifest>

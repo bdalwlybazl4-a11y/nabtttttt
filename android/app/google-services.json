@@ -1,0 +1,443 @@
+{
+  "project_info": {
+    "project_number": "866511745374",
+    "firebase_url": "https://housingsa-ab542-default-rtdb.firebaseio.com",
+    "project_id": "housingsa-ab542",
+    "storage_bucket": "housingsa-ab542.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:7b3d1df9f63669ef3e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.fashion_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:5b8b4a2c4f419b233e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.firebasatask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:51dc8ba31ac2e9663e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.friebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:0d79d26f4810756b3e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.gsgysg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:6b12d23011ed03903e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.magdi_scanning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:bd2a930b4c4170fb3e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.nabbelproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:77239616631df8353e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.regulator_time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:dbb120f99800b2fa3e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.university"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:3a56989e90ac78be3e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.untitled2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:750b1e773c7ef31f3e1fcf",
+        "android_client_info": {
+          "package_name": "com.example.untitled7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:4d6d20a011164a373e1fcf",
+        "android_client_info": {
+          "package_name": "com.sp12.app.asthsistplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866511745374:android:0849927118531e283e1fcf",
+        "android_client_info": {
+          "package_name": "de.asta_bochum.campus_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_xlqGR1SDNDdHyj23W-L8n64d5TbK8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866511745374-u1j2hot5jmg5svtai7e8qq58tkp9lgel.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "866511745374-24dbj2rt02lsql7av5ikum7p07cp7i0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.magdiScanning"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

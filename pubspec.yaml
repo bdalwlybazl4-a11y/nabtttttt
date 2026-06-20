@@ -1,0 +1,108 @@
+name: digl
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  firebase_core: any
+  firebase_auth: any
+  cloud_firestore: any
+  firebase_storage: any
+  firebase_database: any
+  firebase_app_check: any
+  firebase_messaging: any
+
+  google_sign_in: any
+  google_fonts: any
+  internet_connection_checker: any
+  record: any
+  syncfusion_flutter_pdf: any
+  printing: any
+
+  provider: any
+  flutter_bloc: any
+  equatable: any
+
+  dio: any
+
+  shared_preferences: any
+  intl: any
+  image_picker: any
+  cached_network_image: any
+  url_launcher: any
+  share_plus: any
+  flutter_riverpod: any
+
+  go_router: any
+  flutter_local_notifications: any
+  workmanager: any
+  translator: any
+
+  hive: any
+  hive_flutter: any
+
+  fluttertoast: any
+  google_maps_flutter:
+  awesome_dialog: any
+  fl_chart: ^0.64.0
+  file_picker: any
+  http: any
+  flutter_html: any
+  lottie: any
+
+  connectivity_plus: any
+  shimmer: any
+  permission_handler: any
+  animated_toggle_switch: any
+  flutter_rating_bar: any
+  timezone: any
+  visibility_detector: any
+
+#  zego_express_engine: 3.23.0
+#  zego_uikit: 2.22.2
+  zego_uikit_prebuilt_call: ^4.8.6
+  zego_uikit_signaling_plugin: ^2.8.0
+#  zego_plugin_adapter: 2.13.1
+
+#  flutter_callkit_incoming: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: any
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/sound/
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/Tajawal-Regular.ttf
+    - assets/fonts/Tajawal-Bold.ttf
+    - assets/fonts/Roboto-Regular.ttf
+    - assets/fonts/Roboto-Bold.ttf
+
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
