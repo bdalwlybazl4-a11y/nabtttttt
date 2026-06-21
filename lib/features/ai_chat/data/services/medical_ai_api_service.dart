@@ -191,7 +191,11 @@ class MedicalAiApiService {
     _debug('$serviceName Error Message: ${e.message}');
 
     if (statusCode == 401 || statusCode == 403) {
-      return 'رفضت Google طلب Gemini برمز $statusCode. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}. تحقق من مفتاح GEMINI_API_KEY وصلاحية Generative Language API/Google AI Studio لهذا المفتاح.';
+      return _formatAuthenticationError(
+        statusCode: statusCode,
+        googleMessage: googleMessage,
+        fallbackMessage: e.message,
+      );
     }
     if (statusCode == 404) {
       return 'رابط أو نموذج Gemini غير موجود برمز 404. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}. النموذج الحالي: $model.';
@@ -207,6 +211,23 @@ class MedicalAiApiService {
     }
 
     return 'تعذر الاتصال بـ $serviceName. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message ?? e.type.name}.';
+  }
+
+  String _formatAuthenticationError({
+    required int? statusCode,
+    required String googleMessage,
+    required String? fallbackMessage,
+  }) {
+    final actualMessage = googleMessage.isNotEmpty
+        ? googleMessage
+        : (fallbackMessage ?? 'لم ترسل Google تفاصيل إضافية.');
+
+    return 'رفضت Google طلب Gemini برمز $statusCode. '
+        'السبب الفعلي من Google: $actualMessage. '
+        'هذا يعني أن المفتاح لم يُقبل كمفتاح Gemini صالح لهذا الطلب، وليس مشكلة Firebase أو NEWS_API_KEY. '
+        'تأكد من إنشاء المفتاح من Google AI Studio كمفتاح Gemini API/Auth key أو من تقييد مفتاح Google Cloud القياسي على Generative Language API، '
+        'ثم شغّل التطبيق هكذا: flutter run --dart-define=GEMINI_API_KEY=YOUR_REAL_GEMINI_KEY. '
+        'إذا كان المفتاح من النوع القياسي وغير مقيّد فقد ترفضه Gemini API حالياً؛ أنشئ مفتاحاً جديداً من AI Studio أو أضف قيود API مناسبة.';
   }
 
   String _extractApiErrorMessage(dynamic data) {
