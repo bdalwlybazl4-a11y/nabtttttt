@@ -300,6 +300,21 @@ class MedicalAiApiService {
     if (statusCode == 400) {
       return 'رفضت Google تنسيق طلب Gemini برمز 400. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}.';
     }
+    if (statusCode == 404) {
+      return 'رابط أو نموذج Gemini غير موجود برمز 404. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}. النموذج الحالي: $model.';
+    }
+    if (statusCode == 429) {
+      return 'تم تجاوز حد طلبات Gemini برمز 429. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}.';
+    }
+    if (statusCode != null && statusCode >= 500) {
+      return 'خطأ من خوادم $serviceName برمز $statusCode. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}.';
+    }
+    if (statusCode == 400) {
+      return 'رفضت Google تنسيق طلب Gemini برمز 400. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message}.';
+    }
+
+    return 'تعذر الاتصال بـ $serviceName. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message ?? e.type.name}.';
+  }
 
     return 'تعذر الاتصال بـ $serviceName. السبب الفعلي: ${googleMessage.isNotEmpty ? googleMessage : e.message ?? e.type.name}.';
   }
