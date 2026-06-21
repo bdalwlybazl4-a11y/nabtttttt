@@ -2118,6 +2118,7 @@ Future<DocumentSnapshot<Map<String, dynamic>>> _consultationDoc() =>
       elevation: 0,
       iconTheme: IconThemeData(color: theme.colorScheme.primary),
       titleSpacing: 0,
+      toolbarHeight: 72,
       title: InkWell(
         onTap: () => _showUserInfoDialog(context),
         child: Row(
@@ -2131,7 +2132,7 @@ Future<DocumentSnapshot<Map<String, dynamic>>> _consultationDoc() =>
                 fallbackIconColor: theme.primaryColor,
               ),
             ),
-            const SizedBox(width: 12),
+            const SizedBox(width: 10),
             Expanded(
               child: StreamBuilder<DocumentSnapshot>(
                 stream: _firestore.collection('users').doc(widget.isDoctor ? widget.patientUid : widget.doctorUid).snapshots(),
@@ -2140,10 +2141,15 @@ Future<DocumentSnapshot<Map<String, dynamic>>> _consultationDoc() =>
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(contactName,
-                            style: theme.textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            )),
+                        Text(
+                          contactName,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: theme.textTheme.titleSmall?.copyWith(
+                            fontWeight: FontWeight.w900,
+                            height: 1.15,
+                          ),
+                        ),
                         Text('',
                             style: theme.textTheme.bodySmall?.copyWith(
                               color: theme.disabledColor,
@@ -2174,10 +2180,15 @@ Future<DocumentSnapshot<Map<String, dynamic>>> _consultationDoc() =>
                   return Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(contactName,
-                          style: theme.textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          )),
+                      Text(
+                        contactName,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: theme.textTheme.titleSmall?.copyWith(
+                          fontWeight: FontWeight.w900,
+                          height: 1.15,
+                        ),
+                      ),
                       Text(
                         isOnline
                             ? 'متصل الآن'
