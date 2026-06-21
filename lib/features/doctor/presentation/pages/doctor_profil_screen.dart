@@ -320,9 +320,18 @@ class DoctorProfileScreen extends StatelessWidget {
           width: double.infinity,
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-            color: Colors.blue.withOpacity(0.4),
+            color: Theme.of(context).colorScheme.surface.withOpacity(0.96),
             borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: Colors.white30),
+            border: Border.all(
+              color: Theme.of(context).colorScheme.primary.withOpacity(0.22),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.08),
+                blurRadius: 20,
+                offset: const Offset(0, 10),
+              ),
+            ],
           ),
           child: Column(
             children: [
@@ -369,21 +378,32 @@ class DoctorProfileScreen extends StatelessWidget {
   Widget _buildInfoRow(IconData icon, String label, String value) {
     return Row(
       children: [
-        Icon(icon, color: Colors.blue[900], size: 20),
-        const SizedBox(width: 8),
+        Container(
+          padding: const EdgeInsets.all(7),
+          decoration: BoxDecoration(
+            color: Colors.blue.withOpacity(0.12),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Icon(icon, color: Colors.blue[800], size: 20),
+        ),
+        const SizedBox(width: 10),
         Text(
           '$label:',
-          style: const TextStyle(
-              color: Colors.black54,
-              fontSize: 16,
-              fontWeight: FontWeight.w500),
+          style: TextStyle(
+              color: Theme.of(context).colorScheme.onSurface.withOpacity(0.72),
+              fontSize: 15,
+              fontWeight: FontWeight.w800),
         ),
         const SizedBox(width: 8),
         Expanded(
           child: Text(
             value,
-            style: const TextStyle(color: Colors.black, fontSize: 16),
-            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              color: Theme.of(context).colorScheme.onSurface,
+              fontSize: 15,
+              fontWeight: FontWeight.w700,
+            ),
+            overflow: TextOverflow.visible,
           ),
         ),
       ],

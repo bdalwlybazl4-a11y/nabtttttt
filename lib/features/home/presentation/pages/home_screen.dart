@@ -268,7 +268,7 @@ class _HomeScreenState extends State<HomeScreen> {
         bottom: false,
         child: PremiumGradientBackground(
         child: Padding(
-          padding: const EdgeInsets.only(bottom: 118),
+          padding: EdgeInsets.only(bottom: _currentIndex == 4 ? 0 : 118),
           child: IndexedStack(
           index: _currentIndex,
           children: [

@@ -422,15 +422,11 @@ class _SettingsScreenState extends State<SettingsScreen>
             const Divider(),
             ListTile(
               leading: const Icon(Icons.psychology_alt_rounded),
-              title: const Text('أسئلة الذكاء الاصطناعي'),
-              subtitle: const Text('فتح أسئلة الذكاء الاصطناعي يدويًا عند الحاجة'),
+              title: const Text('المساعد الذكي لبناء ملفك الصحي'),
+              subtitle: const Text('افتح محادثة AI لتحليل حالتك وبناء سياق طبي ذكي'),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const HealthAssessmentScreen(),
-                  ),
-                );
+                Navigator.of(context).pushNamed('/medical_ai_chat');
               },
             ),
           ],
